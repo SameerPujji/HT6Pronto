@@ -1,0 +1,23 @@
+<h1>Orders:</h1>
+<center>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Order Number</th>
+        </tr>
+        {% for order in orders %}
+        <tr>
+            <td>{{order.time}}</td>
+            <td>{{order.code}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+
+
+<style>
+    th,
+    td {
+        padding: 15px;
+    }
+</style>
